@@ -16,14 +16,7 @@ model = tf.keras.models.load_model('conv_model.keras')
 categories = {0:'dislike',1:'like',2:'mute',3:'one',4:'peace',5:'stop'}
 
 prev_file = ''
-'''
-cam = cv2.VideoCapture(2)
-result, image = cam.read()
-if result:
-    cv2.imshow("capture",image)
-    cv2.waitKey(0)
-    cv2.destroyWindow("capture")
-'''
+
 while True:
     list_of_files = glob.glob('/mnt/c/Users/vacar/Pictures/Camera Roll/*')
     try:
