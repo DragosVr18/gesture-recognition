@@ -34,4 +34,4 @@ model.fit(train, epochs=8)
 
 model.evaluate(test, batch_size=32, verbose=1)
 
-model.save('gesture_model.keras')
+model.save('conv_model.keras')
